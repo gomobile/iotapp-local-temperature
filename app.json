@@ -1,0 +1,15 @@
+{
+	"reponame":"iotapp-local-temperature",
+	"title":"Local Temperature",
+	"tooltip":"A simple node.js application intended to showcase how to read analog data from a Grover Starter Kit Plus – IoT Intel® Edition Temperature Sensor, start a web server and communicate wirelessly using WebSockets.",
+	"description":"A simple node.js application intended to showcase how to read analog data from a Grover Starter Kit Plus – IoT Intel® Edition Temperature Sensor, start a web server and communicate wirelessly using WebSockets.",
+	"articleurl":"https://software.intel.com/en-us/html5/articles/iot-local-temperature-nodejs-and-html5-samples",
+    "screenshotUrl":"",
+    "iconUrl":"",
+	"highlights":[""],
+    "keywords":[""],
+	"visible": "true",
+	"apppreview":"false",
+	"appname":"demo.localtemperature",
+	"relname":"4.0.0"
+}
