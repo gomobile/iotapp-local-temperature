@@ -1,5 +1,5 @@
 {
-  "name": "TemperatureChecker",
+  "name": "LocalTemperature",
   "description": "",
   "version": "0.0.0",
   "main": "main.js",
