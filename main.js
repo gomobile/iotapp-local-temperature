@@ -20,7 +20,7 @@ Article: https://software.intel.com/en-us/html5/articles/iot-local-temperature-n
 var B = 3975;
 var mraa = require("mraa");
 
-//GROVE Kit A0 --> Aio(0)
+//GROVE Kit A0 Connector --> Aio(0)
 var myAnalogPin = new mraa.Aio(0);
 
 /*
@@ -31,31 +31,34 @@ Description: Read Temperature Sensor and send temperature in degrees of Fahrenhe
 function startSensorWatch(socket) {
     'use strict';
     setInterval(function () {
-        var a = myAnalogPin.read() >> 2;
+        var a = myAnalogPin.read();
+        console.log("Analog Pin (A0) Output: " + a);
+        //Shifting bits to get value between 0 to 1023 (10 bits)
+        if (a > 1024) {
+            a = a >> 2; //Shift 'a' right two bits
+        }
         //console.log("Checking....");
-
-        //console.log("Analog Pin (A0) Output: " + a);
+        
         var resistance = (1023 - a) * 10000 / a; //get the resistance of the sensor;
         //console.log("Resistance: "+resistance);
         var celsius_temperature = 1 / (Math.log(resistance / 10000) / B + 1 / 298.15) - 273.15;//convert to temperature via datasheet ;
         //console.log("Celsius Temperature "+celsius_temperature); 
         var fahrenheit_temperature = (celsius_temperature * (9 / 5)) + 35;
-        //console.log("Fahrenheit Temperature "+ fahrenheit_temperature);
+        console.log("Fahrenheit Temperature: " + fahrenheit_temperature);
         socket.emit("message", fahrenheit_temperature);
     }, 4000);
 }
 
-console.log("Sample Reading Temperature Sensor");
+console.log("Sample Reading Grove Kit Temperature Sensor");
 
 //Create Socket.io server
-var app = require('express')();
-var http = require('http').Server(app);
-var io = require('socket.io')(http);
-
-app.get('/', function (req, res) {
+var http = require('http');
+var app = http.createServer(function (req, res) {
     'use strict';
-    res.send('<h1>Hello world from Intel Galileo</h1>');
-});
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.end('<h1>Hello world from Intel IoT platform!</h1>');
+}).listen(1337);
+var io = require('socket.io')(app);
 
 //Attach a 'connection' event handler to the server
 io.on('connection', function (socket) {
@@ -73,7 +76,3 @@ io.on('connection', function (socket) {
     });
 });
 
-http.listen(1337, function () {
-    'use strict';
-    console.log('listening on *:1337');
-});
