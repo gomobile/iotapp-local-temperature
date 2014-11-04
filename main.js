@@ -33,10 +33,6 @@ function startSensorWatch(socket) {
     setInterval(function () {
         var a = myAnalogPin.read();
         console.log("Analog Pin (A0) Output: " + a);
-        //Shifting bits to get value between 0 to 1023 (10 bits)
-        if (a > 1024) {
-            a = a >> 2; //Shift 'a' right two bits
-        }
         //console.log("Checking....");
         
         var resistance = (1023 - a) * 10000 / a; //get the resistance of the sensor;
