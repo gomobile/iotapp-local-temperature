@@ -43,7 +43,7 @@ function startSensorWatch(socket) {
         //console.log("Resistance: "+resistance);
         var celsius_temperature = 1 / (Math.log(resistance / 10000) / B + 1 / 298.15) - 273.15;//convert to temperature via datasheet ;
         //console.log("Celsius Temperature "+celsius_temperature); 
-        var fahrenheit_temperature = (celsius_temperature * (9 / 5)) + 35;
+        var fahrenheit_temperature = (celsius_temperature * (9 / 5)) + 32;
         console.log("Fahrenheit Temperature: " + fahrenheit_temperature);
         socket.emit("message", fahrenheit_temperature);
     }, 4000);
