@@ -33,17 +33,13 @@ function startSensorWatch(socket) {
     setInterval(function () {
         var a = myAnalogPin.read();
         console.log("Analog Pin (A0) Output: " + a);
-        //Shifting bits to get value between 0 to 1023 (10 bits)
-        if (a > 1024) {
-            a = a >> 2; //Shift 'a' right two bits
-        }
         //console.log("Checking....");
         
         var resistance = (1023 - a) * 10000 / a; //get the resistance of the sensor;
         //console.log("Resistance: "+resistance);
         var celsius_temperature = 1 / (Math.log(resistance / 10000) / B + 1 / 298.15) - 273.15;//convert to temperature via datasheet ;
         //console.log("Celsius Temperature "+celsius_temperature); 
-        var fahrenheit_temperature = (celsius_temperature * (9 / 5)) + 35;
+        var fahrenheit_temperature = (celsius_temperature * (9 / 5)) + 32;
         console.log("Fahrenheit Temperature: " + fahrenheit_temperature);
         socket.emit("message", fahrenheit_temperature);
     }, 4000);
