@@ -12,5 +12,5 @@
 	"apppreview":"false",
 	"appname":"demo.localtemperature",
 	"relname":"4.0.0",
-  	"projectTypeName": "com.intel.xdk.projecttype.jsapp"
+  	"projectTypeName": "com.intel.xdk.projecttype.iotapp"
 }
