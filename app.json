@@ -1,17 +1,21 @@
 {
-	"reponame":"iotapp-local-temperature",
-	"title":"Local Temperature",
-	"tooltip":"A simple node.js application intended to showcase how to read analog data from a Grove Starter Kit Plus IoT Intel Edition Temperature Sensor, start a web server and communicate wirelessly using WebSockets. The HTML5 companion app is visible under App Developer Projects: Work with a Demo panel.",
-	"description":"A simple node.js application intended to showcase how to read analog data from a Grove Starter Kit Plus IoT Intel Edition Temperature Sensor, start a web server and communicate wirelessly using WebSockets. The HTML5 companion app is visible under App Developer Projects: Work with a Demo panel.",
-	"articleurl":"https://software.intel.com/en-us/html5/articles/iot-local-temperature-nodejs-and-html5-samples",
-    	"template":"true",
-    	"screenshotUrl":"",
-    	"iconUrl":"",
-	"highlights":[""],
-    	"keywords":[""],
-	"visible": "true",
-	"apppreview":"false",
-	"appname":"demo.localtemperature",
-	"relname":"4.0.0",
-  	"projectTypeName": "com.intel.xdk.projecttype.iotapp"
+   "title" : "Local Temperature",
+   "visible" : "true",
+   "screenshotUrl" : "",
+   "iconUrl" : "",
+   "articleUrl" : "https://software.intel.com/en-us/html5/articles/iot-local-temperature-nodejs-and-html5-samples",
+   "highlights" : [
+      ""
+   ],
+   "relName" : "4.0.0",
+   "tooltip" : "A simple node.js application intended to showcase how to read analog data from a Grove Starter Kit Plus IoT Intel Edition Temperature Sensor, start a web server and communicate wirelessly using WebSockets. The HTML5 companion app is visible under App Developer Projects: Work with a Demo panel.",
+   "repoName" : "iotapp-local-temperature",
+   "template" : "true",
+   "description" : "A simple node.js application intended to showcase how to read analog data from a Grove Starter Kit Plus IoT Intel Edition Temperature Sensor, start a web server and communicate wirelessly using WebSockets. The HTML5 companion app is visible under App Developer Projects: Work with a Demo panel.",
+   "keywords" : [
+      ""
+   ],
+   "projectTypeName" : "com.intel.xdk.projecttype.iotapp",
+   "appPreview" : "false",
+   "appName" : "demo.localtemperature"
 }
