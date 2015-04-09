@@ -5,7 +5,6 @@
    "template" : true,
    "title" : "Local Temperature",
    "relName" : "4.0.0",
-   "appPreview" : false,
    "keywords" : [
       ""
    ],
@@ -17,6 +16,5 @@
    "highlights" : [
       ""
    ],
-   "mobile" : false,
    "screenshotUrl" : ""
 }
