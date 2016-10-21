@@ -1,22 +1,15 @@
 {
-   "tooltip" : "A simple node.js application intended to showcase how to read analog data from a Grove Starter Kit Plus IoT Intel Edition Temperature Sensor, start a web server and communicate wirelessly using WebSockets. The HTML5 companion app is visible under HTML5 Companion Hybrid Mobile or Web App > Samples and Demos > General (HTML5 + Cordova) panel.",
-   "section" : "iot-templates",
-   "group" : "other",
-   "visible" : true,
-   "description" : "A simple node.js application intended to showcase how to read analog data from a Grove Starter Kit Plus IoT Intel Edition Temperature Sensor, start a web server and communicate wirelessly using WebSockets. The HTML5 companion app is visible under HTML5 Companion Hybrid Mobile or Web App > Samples and Demos > General (HTML5 + Cordova) panel.",
-   "template" : true,
-   "title" : "Local Temperature",
-   "relName" : "4.0.0",
-   "keywords" : [
-      ""
-   ],
-   "appName" : "demo.localtemperature",
-   "repoName" : "iotapp-local-temperature",
-   "iconUrl" : "",
-   "projectTypeName" : "com.intel.xdk.projecttype.iotapp",
-   "articleUrl" : "https://software.intel.com/en-us/xdk/docs/iot-local-temperature-nodejs-and-html5-samples",
-   "highlights" : [
-      ""
-   ],
-   "screenshotUrl" : ""
+  "title" : "Local Temperature",
+  "projectTypeName" : "com.intel.xdk.projecttype.iotapp",
+  "sample": false,
+  "template": true,
+  "visible" : true,
+  "sortWeight" : "0.0",
+  "repoName" : "iotapp-local-temperature",
+  "tooltip" : "A simple node.js application intended to showcase how to read analog data from a Grove Starter Kit Plus IoT Intel Edition Temperature Sensor, start a web server and communicate wirelessly using WebSockets. The HTML5 companion app is visible under HTML5 Companion Hybrid Mobile or Web App > Samples and Demos > General (HTML5 + Cordova) panel.",
+  "description" : "A simple node.js application intended to showcase how to read analog data from a Grove Starter Kit Plus IoT Intel Edition Temperature Sensor, start a web server and communicate wirelessly using WebSockets. The HTML5 companion app is visible under HTML5 Companion Hybrid Mobile or Web App > Samples and Demos > General (HTML5 + Cordova) panel.",
+  "articleUrl" : "https://software.intel.com/en-us/xdk/docs/iot-local-temperature-nodejs-and-html5-samples",
+  "keywords" : [""],
+  "targets": ["edison","galileo"],
+  "runtimes": ["node"]
 }
