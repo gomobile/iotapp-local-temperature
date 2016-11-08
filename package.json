@@ -1,5 +1,5 @@
 {
-  "name": "LocalTemperature",
+  "name": "xdk-iot-local-temperature",
   "description": "",
   "version": "0.0.0",
   "main": "main.js",
