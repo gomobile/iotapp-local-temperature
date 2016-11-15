@@ -6,10 +6,10 @@
   "visible" : true,
   "sortWeight" : "0.0",
   "repoName" : "iotapp-local-temperature",
-  "tooltip" : "A simple node.js application intended to showcase how to read analog data from a Grove Starter Kit Plus IoT Intel Edition Temperature Sensor, start a web server and communicate wirelessly using WebSockets. The HTML5 companion app is visible under HTML5 Companion Hybrid Mobile or Web App > Samples and Demos > General (HTML5 + Cordova) panel.",
-  "description" : "A simple node.js application intended to showcase how to read analog data from a Grove Starter Kit Plus IoT Intel Edition Temperature Sensor, start a web server and communicate wirelessly using WebSockets. The HTML5 companion app is visible under HTML5 Companion Hybrid Mobile or Web App > Samples and Demos > General (HTML5 + Cordova) panel.",
+  "tooltip" : "Read analog data from a temperature sensor. Works with an IoT mobile companion app named \"Local Temperature.\"",
+  "description" : "A simple Node.js IoT app that shows how to read analog data from a temperature sensor and display the results via a mobile app. Data is communicated to the mobile app using a simple web server and WebSockets connection. The IoT mobile companion app is named \"Local Temperature\" and is a mobile app project that can be found in the \"Samples and Demos\" section of the \"Companion App\" part of the \"Start a New Project\" page (from the Projects tab).",
   "articleUrl" : "https://software.intel.com/en-us/xdk/docs/iot-local-temperature-nodejs-and-html5-samples",
-  "keywords" : [""],
+  "keywords" : ["temperature sensor","analog i/o","WebSockets"],
   "targets": ["edison","galileo"],
   "runtimes": ["node"]
 }
