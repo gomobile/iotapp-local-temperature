@@ -13,20 +13,35 @@ Intel XDK, please start with
 
 App Overview
 ------------
-The Local Temperature Node.js sample application distributed
-within Intel® XDK IoT Edition under the IoT with Node.js Projects
-project creation option showcases how to read analog data from
-a Grover Starter Kit Plus – IoT Intel® Edition Temperature Sensor,
-start a web server and communicate wirelessly using WebSockets.
+Demonstrates reading analog data from the temperature sensor in a
+[Grover Starter Kit Plus](https://www.seeedstudio.com/
+Grove-Starter-Kit-Plus-IoT-Edison-p-2634.html) (or equivalent) I/O kit.
+The app starts a web server on the IoT device that can then be used for
+communication via a [WebSocket](https://www.websocket.org/) interface.
 
-Important Sample App Files
---------------------------
+This IoT app works in conjunction with a mobile companion app also named
+"Local Temperature." The corresponding mobile app project can be found in the
+"Samples and Demos" section of the "HTML5 Companion App" section of the "Start
+a New Project" page (located on the Projects tab). See that app for additional
+details.
+
+Important App Files
+-------------------
 * main.js
 * package.json
 
-Important Sample Project Files
-------------------------------
+Important Project Files
+-----------------------
 * README.md
 * LICENSE.md
-* project-name.xdk
-* project-name.xdke
+* <project-name>.xdk
+
+Tested IoT Node.js Platforms
+----------------------------
+* [Intel® Galileo Board](http://intel.com/galileo)
+* [Intel® Edison Development Platform](http://intel.com/edison)
+
+This sample can run on other IoT [Node.js](http://nodejs.org) development
+platforms, that include the appropriate sensor hardware, but may require
+changes to the I/O initialization and configuration code in order to work on
+those other platforms.
