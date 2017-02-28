@@ -1,5 +1,6 @@
 Intel® XDK IoT Node.js\* Local Temperature App
 ==============================================
+
 See [LICENSE.md](LICENSE.md) for license terms and conditions.
 
 This sample application is distributed as part of the
@@ -19,6 +20,7 @@ information regarding the upm sensor and actuator library APIs.
 
 App Overview
 ------------
+
 Demonstrates reading analog data from the temperature sensor in a
 [Grover Starter Kit Plus](https://www.seeedstudio.com/
 Grove-Starter-Kit-Plus-IoT-Edison-p-2634.html) (or equivalent) I/O kit.
@@ -33,17 +35,20 @@ details.
 
 Important App Files
 -------------------
+
 * main.js
 * package.json
 
 Important Project Files
 -----------------------
+
 * README.md
 * LICENSE.md
 * \<project-name\>.xdk
 
 Tested IoT Node.js Platforms
 ----------------------------
+
 * [Intel® Galileo Board for Arduino](http://intel.com/galileo)
 * [Intel® Edison Board for Arduino](http://intel.com/edison)
 
